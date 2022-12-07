@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import MyStoreList from './MyStoreList.vue';
-import SetList from '../Todo/SetList.vue';
+import MyStoreList from '@/Shared/store/MyStoreList.vue';
+import SetList from '@/Shared/services/SetList.vue';
 
 export default {
   components: { MyStoreList, SetList },

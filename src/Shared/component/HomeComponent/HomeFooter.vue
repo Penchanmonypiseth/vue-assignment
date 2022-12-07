@@ -2,10 +2,10 @@
   <div class="footer-width">
     <div class="footer-ads">
       <div class="footer-links">
-        <router-link to="/notAvailable">FQA</router-link>
-        <router-link to="/notAvailable">PREVIEW</router-link>
-        <router-link to="/notAvailable">CONTACT US</router-link>
-        <router-link to="/notAvailable">DOWNLOAD</router-link>
+        <router-link to="/loading">FQA</router-link>
+        <router-link to="/loading">PREVIEW</router-link>
+        <router-link to="/loading">CONTACT US</router-link>
+        <router-link to="/loading">DOWNLOAD</router-link>
       </div>
       <div class="footer-social-media-icons">
         <i class="fa-brands fa-facebook-f"></i>

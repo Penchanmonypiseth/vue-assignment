@@ -3,15 +3,14 @@
 </template>
 
 <script>
-import NavBar from './components/HomeComponent/NavBar.vue';
+import NavBar from '@/Shared/component/HomeComponent/NavBar.vue';
 export default {
-  components: { NavBar },
+  components: { NavBar,},
   data() {
     return {};
   },
 };
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

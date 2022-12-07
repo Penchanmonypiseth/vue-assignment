@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import ViewList from './ViewList.vue';
-import RuleTest from '../MyRuleTestToast/RuleTest';
+import ViewList from '@/Shared/store/ViewList.vue';
+import RuleTest from '@/Shared/component/MyRuleTestToast/RuleTest.vue';
 export default {
   components: { ViewList, RuleTest },
   data() {

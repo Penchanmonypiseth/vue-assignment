@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import HomeFooter from '../components/HomeComponent/HomeFooter.vue';
+import HomeFooter from '@/Shared/component/HomeComponent/HomeFooter.vue';
 export default {
   name: 'HomeView',
   components: { HomeFooter },

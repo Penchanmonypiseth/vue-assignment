@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import MessageErrorInput from '../AlertMsg/MessageErrorInput.vue';
+import MessageErrorInput from '@/Shared/component/AlertMsg/MessageErrorInput.vue';
 export default {
   components: {
     MessageErrorInput,
