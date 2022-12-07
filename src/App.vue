@@ -1,11 +1,10 @@
 <template>
   <NavBar />
 </template>
-
 <script>
 import NavBar from '@/Shared/component/HomeComponent/NavBar.vue';
 export default {
-  components: { NavBar,},
+  components: { NavBar },
   data() {
     return {};
   },

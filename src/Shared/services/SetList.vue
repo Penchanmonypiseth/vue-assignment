@@ -5,7 +5,14 @@
         <div class="mario-title">
           <img src="@/assets/mario-title.svg" />
         </div>
-        <input type="text" name="name" id="name" placeholder=" Set your Plan / Date Here.." v-model="enterText" />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" Set your Plan / Date Here.."
+          v-model="enterText"
+          v-focus
+        />
         <button type="submit" @click="submitData">Submit Data</button>
       </form>
     </div>
@@ -33,9 +40,14 @@
 
 <script>
 import MessageErrorInput from '@/Shared/component/AlertMsg/MessageErrorInput.vue';
+import { focus } from '@/Shared/directive/vFocus';
+
 export default {
   components: {
     MessageErrorInput,
+  },
+  directives: {
+    focus,
   },
   data() {
     return {
