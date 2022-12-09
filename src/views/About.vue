@@ -43,7 +43,7 @@ section {
   background-color: rgb(255, 255, 255);
   border: solid red 4px;
   border-radius: 20px;
-  animation: aboutAnimate 5s ease infinite;
+  animation: aboutAnimate 5s ease infinite alternate;
 }
 @keyframes aboutAnimate {
   from {
