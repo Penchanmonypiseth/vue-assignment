@@ -13,23 +13,19 @@
           v-model="enterText"
           v-focus
         />
-        <button type="submit" @click="submitData">Submit Data</button>
+        <button type="submit" @click="submitData">{{$t('Submit Data')}}</button>
       </form>
     </div>
   </div>
   <transition name="invalid-animate">
     <MessageErrorInput v-if="isInputValid">
       <div class="header-error">
-        <header>Mario Todo Input Invalid!</header>
+        <header>{{$t('invalid-title')}}</header>
       </div>
       <div class="content-error-message">
         <span>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt ipsum tempora qui? Cupiditate dicta
-            vero autem obcaecati veritatis molestias laborum numquam dolore voluptate esse repudiandae deserunt nesciunt
-            suscipit, nihil recusandae consequatur! Aliquid cupiditate id officia ullam natus quod cum odio similique
-            facilis voluptatem? Perspiciatis quis ratione harum? Voluptas enim impedit ea voluptatum tempora doloribus,
-            adipisci ipsum nostrum autem derj gu error...
+           {{$t('invalid-message')}}
           </p>
           <button @click="comfrimInvalid">Okay</button>
         </span>

@@ -1,17 +1,15 @@
 <template>
-  <div class="about">
-    <section>
-      <h1>About Mario Todo</h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iure, nemo, nobis numquam eaque ducimus natus
-      aspernatur ut aperiam, totam laudantium est ratione atque tenetur doloremque! Ab saepe deserunt dicta. Veritatis
-      at voluptatibus aut obcaecati reiciendis provident reprehenderit, tenetur veniam quisquam a unde ipsa facere quos
-      illum, rerum eum id officiis consectetur, soluta sunt. Ea sunt voluptates dolore suscipit culpa quasi voluptatibus
-      quod excepturi esse nesciunt unde tenetur id maiores tempore ab iure soluta libero, voluptate expedita modi eos
-      odit. Voluptas quos quibusdam earum rem voluptates dolore aut. Incidunt a suscipit amet aliquid, iure adipisci
-      ullam animi voluptatum corrupti.
-    </section>
+  <div class="about-width">
+    <div class="about-ads">
+      <div class="about">
+        <h1>{{ $t('about-mario-todo') }}</h1>
+        {{ $t('About-mario-content') }}
+      </div>
+    </div>
+    <div class="footer-ads">
+      <HomeFooter />
+    </div>
   </div>
-  <HomeFooter />
 </template>
 <script>
 import HomeFooter from '@/Shared/component/HomeComponent/HomeFooter.vue';
@@ -25,38 +23,67 @@ export default {
 </script>
 
 <style scoped>
-.about {
-  height: 480px;
-  width: 600px;
+.about-width {
+  width: 1600px;
+  height: 640px;
   margin: auto;
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  letter-spacing: 0px;
+}
+.about-ads {
+  width: 1600px;
+  margin: auto;
+  height: 640px;
+  position: relative;
+  top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 30px;
-  font-weight: 100;
 }
-section {
+.about {
+  width: 600px;
   padding: 10px;
   background-color: rgb(255, 255, 255);
   border: solid red 4px;
   border-radius: 20px;
-  animation: aboutAnimate 5s ease infinite alternate;
+  animation: aboutAnimate 2s ease infinite alternate;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0px;
+  line-height: 30px;
+  font-weight: 100;
+  position: relative;
+  top: -80px;
+}
+.footer-ads {
+  position: relative;
+  top: 10px;
 }
 @keyframes aboutAnimate {
   from {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
   to {
-    transform: translateY(50px);
+    transform: translateY(30px);
   }
 }
 @media screen and (max-width: 1600px) {
+  .about-width {
+    width: 1400px;
+    height: 440px;
+    margin: auto;
+  }
+  .about-ads {
+    width: 1400px;
+    margin: auto;
+    height: 440px;
+    position: relative;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .about {
-    height: 230px;
-    margin-top: 100px;
+    width: 800px;
+    height: 300px;
   }
 }
 </style>

@@ -1,18 +1,25 @@
 <template>
   <div class="home-width">
     <div class="home-ads">
-      <div class="captions">
-        <p>MARIO TODO IS A PERFECT TOOL FOR YOUR DALIY LIFE.</p>
-      </div>
-      <div class="big-captions">
-        <h1>Mario Todo is Create a Beautiful List Note EveryDay In A Minutes Check It Now!!.</h1>
-        <div class="home-button">
-          <button @click="viewTodo">Start Now</button>
+      <div class="blog-home-left">
+        <div class="captions">
+          <p>{{ $t('caption') }}</p>
+        </div>
+        <div class="big-captions">
+          <h1>
+            {{ $t('big-caption') }}
+          </h1>
+          <div class="home-button">
+            <button @click="viewTodo">{{ $t('Start-button') }}</button>
+          </div>
         </div>
       </div>
+      <div class="blog-home-right">
+        <img src="@/assets/Mario-bg.jpg" />
+      </div>
+      <HomeFooter />
     </div>
   </div>
-  <HomeFooter />
 </template>
 
 <script>
@@ -32,38 +39,55 @@ export default {
 </script>
 
 <style>
-body {
-  background-image: url('@/assets/Mario-bg.jpg');
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: 75%;
-  background-position-y: 70px;
-}
 .home-width {
   width: 100%;
-  margin-top: 130px;
+  height: 800px;
+  margin-top: -50px;
 }
 .home-ads {
-  width: 1200px;
+  width: 1600px;
   margin: auto;
-  height: 400px;
+  height: 640px;
+  position: relative;
+  top: 60px;
+}
+.blog-home-left {
+  width: 800px;
+  height: 740px;
+  float: left;
+}
+.blog-home-right {
+  width: 800px;
+  height: 740px;
+  float: left;
+
+  overflow: hidden;
+}
+.blog-home-right img {
+  height: 811px;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  left: -600px;
+  top: -71px;
+  background-blend-mode: color-burn;
 }
 .captions p {
   width: 600px;
   display: inline-block;
-  
+  margin: 80px 0px 0px 0px;
   color: rgb(192, 177, 177);
   letter-spacing: 3px;
   font-size: 22px;
 }
 .big-captions {
   width: 600px;
-  margin: 30px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
 }
 .big-captions h1 {
   text-align: start;
-  font-size: 60px;
+  font-size: 50px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 2px;
   font-weight: 100;
@@ -71,7 +95,7 @@ body {
 }
 .home-button button {
   padding: 15px;
-  width: 150px;
+  width: 160px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 2px;
   font-weight: 100;
@@ -89,28 +113,54 @@ body {
 }
 @media screen and (max-width: 1600px) {
   .home-width {
-    margin-top: 100px;
+    height: 400px;
+    margin-top: -50px;
   }
   .home-ads {
-    height: 230px;
+    width: 1400px;
+    margin: auto;
+    height: 440px;
+
+    position: relative;
+    top: 60px;
+  }
+  .blog-home-left {
+    width: 700px;
+    height: 527px;
+    float: left;
+  }
+  .blog-home-right {
+    width: 700px;
+    height: 527px;
+    float: left;
+
+    overflow: hidden;
+  }
+  .blog-home-right img {
+    height: 811px;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -600px;
+    top: -180px;
   }
   .captions p {
-    font-size: 18px;
+    width: 600px;
+    margin: 40px 0px 0px 0px;
+    font-size: 15px;
+  }
+  .big-captions {
+    width: 700px;
+    margin: 60px 0px 0px 0px;
   }
   .big-captions h1 {
-    font-size: 45px;
+    text-align: start;
+    font-size: 40px;
   }
   .home-button button {
-    width: 130px;
     padding: 10px;
-  }
-  body {
-    background-image: url('@/assets/Mario-bg.jpg');
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 75%;
-    background-position-y: -10px;
+    width: 150px;
   }
 }
 </style>

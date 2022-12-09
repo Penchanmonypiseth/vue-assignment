@@ -1,20 +1,21 @@
 <template>
   <div class="my-rule-wrapper" v-if="isRuleContent">
     <div class="my-rule">
-      <div class="header-rule"><h1>My Rule To Test</h1></div>
+      <div class="header-rule">
+        <h1>{{ $t('header-rule') }}</h1>
+      </div>
       <div class="rule">
         <span>
           <p class="important-rule">
-            1. It Is Important Thing I want you go to terminal and run npx json-server --watch data/db.json first.
+            {{ $t('important-rule') }}
           </p>
-          <p>2.If You Input Empty Value You'll See Alert Message</p>
-          <p>3.Data that Users Input Doesn't Lose When You Refresh or Close website.</p>
-          <p>4.You Can Delete List And It Will Be Remove from Json And UserInterface.</p>
-          <p>5.You Can HightLight Lists When You Think You Complete it.</p>
+          <p class="rule-lists">
+            {{ $t('rule-test') }}
+          </p>
         </span>
-        <h2 class="rule-footer">ENJOY TEST</h2>
+        <h2 class="rule-footer">{{$t('rule-footer')}}</h2>
       </div>
-      <button @click="hideRuleContent">Comfirm</button>
+      <button @click="hideRuleContent">{{$t('Comfirm')}}</button>
     </div>
   </div>
 </template>
@@ -46,7 +47,6 @@ export default {
   border: 3px solid rgb(233, 87, 50);
   border-radius: 20px;
   justify-content: center;
-
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .my-rule button {
@@ -89,11 +89,13 @@ export default {
   top: 100px;
   left: 0;
 }
-.rule p {
+.rule,
+.rule-lists p {
   text-align: start;
   margin-left: 30px;
   font-weight: bold;
   margin-right: 20px;
+  line-height: 30px;
 }
 .important-rule {
   color: crimson;
@@ -101,13 +103,14 @@ export default {
 .rule-footer {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 @media screen and (max-width: 1600px) {
   .my-rule-wrapper {
-    top: -350px;
+    top: -650px;
     width: 350px;
-    height: 350px;
+    height: 400px;
     left: 75%;
   }
   .my-rule button {
@@ -121,14 +124,20 @@ export default {
     left: -1px;
   }
   .header-rule h1 {
+    top: 11px;
+    position: relative;
     margin-left: 35px;
+    font-size: 24px;
   }
   .rule {
     color: black;
     top: 80px;
   }
   .rule p {
-   font-size: 12.50px;
+    font-size: 12.5px;
+  }
+  .rule-lists {
+   line-height: 17px;
   }
 }
 </style>

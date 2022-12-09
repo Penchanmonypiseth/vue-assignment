@@ -1,0 +1,22 @@
+{
+  "header-title": "MARIO TODO",
+  "Home-nav": "Home",
+  "About-nav": "About",
+  "big-caption": "Mario Todo is Create a Beautiful List Note EveryDay In A Minutes Check It Now!!.",
+  "caption": "MARIO TODO IS A PERFECT TOOL FOR YOUR DALIY LIFE.",
+  "Start-button": "START NOW",
+  "footer-fqa": "FQA",
+  "footer-preview": "PREVIEW",
+  "footer-contact": "CONTACT US",
+  "footer-download": "Download",
+  "About-mario-content": "Having a good company around you will benefit you in the long run. The positivity, hardworking nature and other good qualities in your company would inspire you and would also show in your behavior.If you surround yourself with harmful and toxic people, they will bring your confidence down and will impact your behavior negatively. Cutting up the negativity from your life would help to lift up your mood and spirit.It is essential to give importance to the right people around you and always surround yourself with good company. Good people motivate you, fill you with positivity, and this boosts your confidence overall.A good company supports you in hard times and help you thrive and prosper. A bad company, on the other hand, suppresses you and make you feel a sense of negativity.",
+  "about-mario-todo": "About Mario Todo",
+  "rule-test": "2.If You Input Empty Value You'll See Alert Message 3.Data that Users Input Doesn't Lose When You Refresh or Close website. 4.You Can Delete List And It Will Be Remove from Json And UserInterface. 5.You Can HightLight Lists When You Think You Complete it.",
+  "important-rule": " 1. It Is Important Thing I want you go to terminal and run ( json-server --watch data/db.json ) first.",
+  "header-rule": "My Rule To Test",
+  "rule-footer": "ENJOY TEST",
+  "Comfirm": "Comfirm",
+  "Submit Data": "Submit Data",
+  "invalid-message": "A warning message, different from error messages!! A warning message, different from error messages!! A warning message, different from error messages!! , appears before someone takes an action to indicate a significant change or potential loss of data. It draws their attention to a potential problem that may or may not require an action on the user’s part. When crafting warning messages, remember that most people scan text instead of reading everything. Make every word count and avoid irrelevant details, Please Input the valid before submit the list Thank you I luv you..",
+  "invalid-title": "Mario Todo Input Invalid!"
+}

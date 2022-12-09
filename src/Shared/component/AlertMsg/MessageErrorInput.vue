@@ -5,7 +5,6 @@
     </div>
   </dialog>
 </template>
-
 <script>
 export default {
   data() {},
@@ -32,7 +31,7 @@ dialog {
   background-color: rgb(255, 255, 255);
   border: solid 2px red;
   width: 610px;
-  height: 300px;
+  height: 320px;
   border-radius: 20px;
   position: relative;
   overflow: hidden;

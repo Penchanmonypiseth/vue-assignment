@@ -2,20 +2,31 @@
   <header>
     <div class="header-width">
       <div class="header-title">
-        <h3>MARIO TODO</h3>
+        <h3>{{ $t('header-title') }}</h3>
       </div>
       <nav>
-        <router-link to="/">Home</router-link>
+        <router-link to="/">{{ $t('Home-nav') }}</router-link>
         <img src="@/assets/Mario-logo2-removebg-preview.png" />
-        <router-link to="/about">About</router-link>
+        <router-link to="/about">{{ $t('About-nav') }}</router-link>
       </nav>
+      <div class="switch-local">
+        <select v-model="$i18n.locale">
+          <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
+            {{ lang }}
+          </option>
+        </select>
+      </div>
     </div>
   </header>
   <router-view />
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return { langs: ['en', 'km'] };
+  },
+};
 </script>
 
 <style scoped>
@@ -30,10 +41,10 @@ header {
   margin-bottom: 50px;
 }
 .header-width {
-  width: 1200px;
+  width: 1600px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
 }
 .header-title {
@@ -75,5 +86,21 @@ nav a {
 nav a.router-link-exact-active {
   background-color: crimson;
   color: white;
+}
+.switch-local select {
+  margin-right: 20px;
+  padding: 5px 10px 5px 8px;
+  border: 1px solid #999;
+  outline: none;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 9px;
+  color: #333;
+}
+@media screen and (max-width: 1600px) {
+  .header-width {
+    width: 1400px;
+  }
 }
 </style>

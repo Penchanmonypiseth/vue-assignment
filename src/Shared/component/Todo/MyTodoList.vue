@@ -31,6 +31,7 @@ export default {
 <style scoped>
 .switch-wraper {
   width: 100%;
+  height: 790px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +86,10 @@ export default {
 
 @media screen and (max-width: 1600px) {
   .switch-wraper {
-    margin-top: -25px;
+    height: 557px;
+  }
+  .switch-view {
+    margin-top: -10px ;
   }
 }
 </style>
