@@ -13,19 +13,19 @@
           v-model="enterText"
           v-focus
         />
-        <button type="submit" @click="submitData">{{$t('Submit Data')}}</button>
+        <button type="submit" @click="submitData">{{ $t('Submit Data') }}</button>
       </form>
     </div>
   </div>
   <transition name="invalid-animate">
     <MessageErrorInput v-if="isInputValid">
       <div class="header-error">
-        <header>{{$t('invalid-title')}}</header>
+        <header>{{ $t('invalid-title') }}</header>
       </div>
       <div class="content-error-message">
         <span>
           <p>
-           {{$t('invalid-message')}}
+            {{ $t('invalid-message') }}
           </p>
           <button @click="comfrimInvalid">Okay</button>
         </span>

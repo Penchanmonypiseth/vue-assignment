@@ -30,8 +30,8 @@ dialog {
 .error-wraper {
   background-color: rgb(255, 255, 255);
   border: solid 2px red;
-  width: 610px;
-  height: 320px;
+  width: 710px;
+  height: 350px;
   border-radius: 20px;
   position: relative;
   overflow: hidden;

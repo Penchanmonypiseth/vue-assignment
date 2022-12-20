@@ -38,7 +38,7 @@ export default {
 <style scoped>
 .my-rule-wrapper {
   width: 450px;
-  height: 450px;
+  height: 490px;
   background-color: whitesmoke;
   display: flex;
   position: relative;
